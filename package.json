@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "server": "json-server --watch server.json --port 3333"
+    "server": "json-server --watch server.json --port 3333",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "Rafael Dias Zendron",
@@ -11,5 +12,9 @@
   "description": "Aplicação para agendamento de horários de corte de cabelo",
   "dependencies": {
     "json-server": "1.0.0-alpha.21"
+  },
+  "devDependencies": {
+    "webpack": "5.89.0",
+    "webpack-cli": "5.1.4"
   }
 }
