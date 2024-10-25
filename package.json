@@ -6,9 +6,9 @@
     "server": "json-server --watch server.json --port 3333"
   },
   "keywords": [],
-  "author": "",
+  "author": "Rafael Dias Zendron",
   "license": "ISC",
-  "description": "",
+  "description": "Aplicação para agendamento de horários de corte de cabelo",
   "dependencies": {
     "json-server": "1.0.0-alpha.21"
   }
