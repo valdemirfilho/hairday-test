@@ -1,3 +1,4 @@
+
 const jsonServer = require('json-server')
 const path = require('node:path')
 const fs = require('node:fs')
@@ -13,8 +14,9 @@ const router = jsonServer.router(db)
 
 
 const middlewares = jsonServer.defaults({
-    static: path.join(__dirname, 'dist') // Servindo arquivos estáticos do diretório 'dist'
-  });
+  static: path.join(__dirname, '..', 'dist') // Servindo arquivos estáticos do diretório 'dist'
+});
+console.log(path.join(__dirname, "..", 'dist'))
 
 server.use(middlewares)
 server.use(jsonServer.rewriter({
