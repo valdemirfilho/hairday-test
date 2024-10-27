@@ -12,11 +12,10 @@ const data = fs.readFileSync(filePath, "utf-8");
 const db = JSON.parse(data);
 const router = jsonServer.router(db)
 
-
-const middlewares = jsonServer.defaults({
-  static: path.join(__dirname, '..', 'dist') // Servindo arquivos estáticos do diretório 'dist'
-});
-console.log(path.join(__dirname, "..", 'dist'))
+const middlewares = jsonServer.defaults()
+//const middlewares = jsonServer.defaults({
+//  static: path.join(__dirname, '..', 'dist') // Servindo arquivos estáticos do diretório 'dist'
+// });
 
 server.use(middlewares)
 server.use(jsonServer.rewriter({
