@@ -11,7 +11,7 @@ export function schedulesShow({dailySchedules}) {
     periodNight.innerHTML = ''
 
     dailySchedules.forEach((schedule) => {
-      console.log(schedule.id, schedule.name, schedule.when)
+      
       const item = document.createElement('li')
       const time = document.createElement('strong')
       const name = document.createElement('span')
