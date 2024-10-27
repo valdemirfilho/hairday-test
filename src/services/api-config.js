@@ -1,5 +1,5 @@
 export const apiConfig = {
-  baseURL:"http://localhost:3333",
+  baseURL:"https://hairday-test.vercel.app/api",
   headers: {
     "Content-Type": "application/json",
   },
