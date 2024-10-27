@@ -5,7 +5,7 @@
   "scripts": {
     "build": "webpack",
     "dev": "webpack serve",
-    "server": "json-server --watch server.json --port 3333"
+    "start": "json-server --watch server.json --port 3333 --static ./dist"
   },
   "keywords": [],
   "author": "Rafael Dias Zendron",
