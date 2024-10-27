@@ -1,11 +1,12 @@
 {
   "name": "hairday",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "build": "webpack",
     "dev": "webpack serve",
-    "start": "json-server --watch server.json --port 3333 --static ./dist"
+    "server": "json-server --watch server.json --port 3333",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "Rafael Dias Zendron",
